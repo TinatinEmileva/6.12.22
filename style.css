@@ -7,14 +7,14 @@ body{
   background-color: peachpuff;
 }
 .topbar{
-  background-color: azure;
+  background-color: rgb(11, 161, 161);
   margin-bottom: 15px;
   padding: 10px 15px;
   box-shadow: 0 0 10px rgb(15, 0, 0);
   display: flex;
 }
 .topbar.topbar-dark{
-  background-color: black;
+  background-color: rgb(226, 96, 36);
   color: rgb(160, 233, 233);
 }
 .topbar.topbar-kyrgyz{
@@ -35,35 +35,80 @@ body{
 }
 .nav .nav-item .nav-link{
   display: flex;
-  padding: 10pz 15px;
+  padding: 10px 15px;
   border-radius: 15px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.712);
+  text-transform: uppercase;
 }
 .nav .nav-item .nav-link:hover{
   color: black;
 }
 .nav .nav-item.active .nav-link{
-background-color: rgb(246, 250, 4);
-color: azure;
+background-color: rgb(4, 90, 250);
+color: rgb(0, 0, 0);
 }
-.nav .nav-dark .nav-item .nav-link{
-  color: azure;
+.nav.nav-dark .nav-item .nav-link{
+  color: rgb(245, 241, 6);
+  text-transform: uppercase;
 }
-.nav .nav-dark .nav-item .nav-link:hover{
+.nav.nav-dark .nav-item .nav-link:hover{
   color: rgb(80, 211, 211);
+
 }
-.nav .nav-dark .nav-item.active .nav-link{
+.nav.nav-dark .nav-item.active .nav-link{
   background-color: azure;
   color: rgb(245, 241, 21);
 }
-.nav .nav-kyrgyz .nav-item .nav-link{
+.nav.nav-kyrgyz .nav-item .nav-link{
   color: azure;
+  text-transform: uppercase;
 }
-.nav .nav-kyrgyz .nav-item .nav-link:hover{
+.nav.nav-kyrgyz .nav-item .nav-link:hover{
   color: rgb(80, 126, 211);
 }
-.nav .nav-kyrgyz .nav-item.active .nav-link{
+.nav.nav-kyrgyz .nav-item.active .nav-link{
   background-color: rgb(231, 17, 17);
   color: rgb(245, 241, 21);
+}
+.nav.nav-rassia .nav-item .nav-link{
+  color: azure;
+  text-transform: uppercase;
+}
+.nav.nav-rassia .nav-item .nav-link:hover{
+  color: rgb(0, 0, 0);
+}
+.nav.nav-rassia .nav-item.active .nav-link{
+  background-color: rgb(231, 17, 17);
+  color: rgb(245, 241, 21);
+}
+.topbar.topbar-skew{
+  padding: 0;
+}
+.nav.nav-skew .nav-item{
+  border-radius: 0;
+  color: brown;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px gray;
+  padding: 20px 25px;
+  background: white;
+  transform: scaleX(-25deg);
+}
+.nav.nav-skew .navitem:hover{
+  background: linear-gradient(50deg, gray, white);
+
+}
+.nav.nav-skew .nav-item.active{
+  background: linear-gradient(45deg, red, rgb(194, 40, 40));
+}
+.nav.nav-skew .nav-item .nav-link{
+  transform: scaleX(20deg);
+  background: none;
+  padding: 0;
+  color: rgb(182, 17, 17);
+}
+.nav.nav-skew .nav-item.active .nav-link{
+  color: azure;
 }
